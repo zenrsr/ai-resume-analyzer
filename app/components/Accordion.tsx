@@ -102,7 +102,7 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
                 "rotate-180": isActive,
             })}
             fill="none"
-            stroke="#98A2B3"
+            stroke="#a3a3a3"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >

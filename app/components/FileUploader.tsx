@@ -37,10 +37,10 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                             <img src="/images/pdf.png" alt="pdf" className="size-10" />
                             <div className="flex items-center space-x-3">
                                 <div>
-                                    <p className="text-sm font-medium text-gray-700 truncate max-w-xs">
+                                    <p className="text-sm font-medium text-silver-100 truncate max-w-xs">
                                         {file.name}
                                     </p>
-                                    <p className="text-sm text-gray-500">
+                                    <p className="text-sm text-silver-400">
                                         {formatSize(file.size)}
                                     </p>
                                 </div>
@@ -48,20 +48,20 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                             <button className="p-2 cursor-pointer" onClick={(e) => {
                                 onFileSelect?.(null)
                             }}>
-                                <img src="/icons/cross.svg" alt="remove" className="w-4 h-4" />
+                                <img src="/icons/cross.svg" alt="remove" className="w-4 h-4 dark-icon" />
                             </button>
                         </div>
                     ): (
                         <div>
                             <div className="mx-auto w-16 h-16 flex items-center justify-center mb-2">
-                                <img src="/icons/info.svg" alt="upload" className="size-20" />
+                                <img src="/icons/info.svg" alt="upload" className="size-20 dark-icon" />
                             </div>
-                            <p className="text-lg text-gray-500">
-                                <span className="font-semibold">
+                            <p className="text-lg text-silver-300">
+                                <span className="font-semibold text-accent-blue">
                                     Click to upload
                                 </span> or drag and drop
                             </p>
-                            <p className="text-lg text-gray-500">PDF (max {formatSize(maxFileSize)})</p>
+                            <p className="text-lg text-silver-400">PDF (max {formatSize(maxFileSize)})</p>
                         </div>
                     )}
                 </div>

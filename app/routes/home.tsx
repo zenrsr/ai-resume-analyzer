@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Resumind" },
+    { title: "Tasya AI" },
     { name: "description", content: "Smart feedback for your dream job!" },
   ];
 }
@@ -39,7 +39,7 @@ export default function Home() {
     loadResumes()
   }, []);
 
-  return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+  return <main className="bg-gradient">
     <Navbar />
 
     <section className="main-section">
@@ -53,7 +53,7 @@ export default function Home() {
       </div>
       {loadingResumes && (
           <div className="flex flex-col items-center justify-center">
-            <img src="/images/resume-scan-2.gif" className="w-[200px]" />
+            <img src="/images/resume-scan-2.gif" className="w-[120px] opacity-80" />
           </div>
       )}
 
